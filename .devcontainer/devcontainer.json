@@ -1,0 +1,19 @@
+{
+    "name": "humble",
+    "dockerComposeFile": "../docker-compose.yaml",
+    "service": "yah",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.associations": {
+                    "*.rviz": "yaml",
+                    "*.srdf": "xml",
+                    "*.urdf": "xml",
+                    "*.xacro": "xml"
+                }
+            }
+        }
+    },
+    "workspaceFolder": "/root/yahboomcar_ws",
+    // "postCreateCommand": "if [ -f /dev/ttyUSB2 ]; then ln -sf  /dev/ttyUSB2 /dev/oradar; fi"
+}

@@ -1,0 +1,22 @@
+services:
+  yah:
+    image: yahboomtechnology/ros-foxy:4.2.0
+    container_name: yahboomtechnology
+    network_mode: host
+    privileged: true
+    working_dir: /root/yahboomcar_ws
+    volumes:
+      - ./foxy_root:/root
+      - /dev/rplidar:/dev/rplidar
+      - /dev/astradepth:/dev/astradepth
+      - /dev/astrauvc:/dev/astrauvc
+      - /dev/myserial:/dev/myserial
+      - /dev/input:/dev/input
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - TZ=Asia/Shanghai
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    command: "/bin/bash"
+
+
