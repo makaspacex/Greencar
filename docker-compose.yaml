@@ -1,7 +1,7 @@
 services:
   yah:
-    image: yahboomtechnology/ros-foxy:4.2.0
-    container_name: yahboomtechnology
+    image: makaspacex/greencar-foxy:4.2.0
+    container_name: makaspacex-greencar-foxy
     network_mode: host
     privileged: true
     working_dir: /root/yahboomcar_ws
